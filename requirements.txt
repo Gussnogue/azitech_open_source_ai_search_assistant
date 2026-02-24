@@ -1,0 +1,18 @@
+# Core
+PyPDF2
+requests
+beautifulsoup4
+
+# IA Multi‑provider
+openai
+groq
+fireworks-ai
+together
+replicate
+
+# Interface
+streamlit
+
+# Utilitários
+python-dotenv
+tiktoken

@@ -1,0 +1,102 @@
+# 🧠 Azitech Open Source AI Search Assistant
+
+**Central de Soluções Digitais com IA Multi-Provedor**  
+Desenvolvido por [Gustavo Nogueira](https://azitech.com.br), CEO da AZITech.
+
+Sistema modular que integra **múltiplos provedores de IA** (Groq, Fireworks, Together, Replicate, Vercel AI Gateway) em uma única interface Streamlit. Oferece desde análise de texto local até geração de código em Python, Rust, C++, consultas SEO e etimologia.
+
+🔗 **Acesse o site oficial:** [azitech.com.br](https://azitech.com.br)
+
+---
+
+## 📋 Índice
+- [Visão Geral](#visão-geral)
+- [Arquitetura do Sistema](#arquitetura-do-sistema)
+- [Módulos Disponíveis](#módulos-disponíveis)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Pré-requisitos](#pré-requisitos)
+- [Instalação e Execução](#instalação-e-execução)
+- [Como Obter Chaves de API](#como-obter-chaves-de-api)
+- [Estrutura de Pastas](#estrutura-de-pastas)
+- [Créditos e Agradecimentos](#créditos-e-agradecimentos)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
+
+---
+
+## 🚀 Visão Geral
+
+O **Azitech AI Search Assistant** é uma plataforma unificada que permite acessar dezenas de modelos de IA através de um único ponto de entrada, com fallback automático entre provedores. Ideal para:
+
+- Profissionais de **SEO** que precisam de auditorias técnicas e sugestões de otimização.
+- **Desenvolvedores** que desejam gerar código em múltiplas linguagens.
+- **Pesquisadores** e **curiosos** que querem explorar etimologia e cálculos.
+- Empresas que buscam **independência de provedor** e otimização de custos.
+
+---
+
+## 🏗️ Arquitetura do Sistema
+
+O sistema é composto por:
+
+1. **Router Inteligente (`router.py`)**  
+   Gerencia chamadas para múltiplos provedores (Groq, Fireworks, Together, Replicate, Vercel) com fallback automático. Se um provedor falhar (cota excedida, instabilidade), a requisição é redirecionada para o próximo disponível.
+
+2. **Módulos Especializados**  
+   Cada funcionalidade é isolada em um módulo independente dentro da pasta `modules/`. Todos utilizam o router para comunicação com a IA.
+
+3. **Interface Streamlit (`app.py`)**  
+   Interface gráfica moderna, responsiva e totalmente personalizada com a identidade visual da AZITech.
+
+4. **Analisador Core (`analisador_core.py`)**  
+   Funcionalidades locais sem IA: extração de headings, metadados, análise de sentimento, palavras-chave, leitura de PDF, etc.
+
+---
+
+## 📦 Módulos Disponíveis
+
+| Módulo | Arquivo | Descrição |
+|--------|---------|-----------|
+| **Analisador Core** | `analisador_core.py` | Análise de texto, PDF, headings e metadados (totalmente local, sem IA). |
+| **Assistente SEO** | `search_assistant.py` | Chat especializado em SEO, estratégias de ranqueamento e otimização de conteúdo. Baseado nas diretrizes oficiais do Google Search Central. |
+| **Código Python** | `code_assistant.py` | Gera código Python a partir de descrições, com explicação, exemplo e LaTeX. |
+| **Rust (Cálculo)** | `rust_calc_assistant.py` | Gera código Rust para problemas matemáticos e numéricos, com exemplos usando números inteiros (prova real). |
+| **C++ (Cálculo)** | `cpp_calc_assistant.py` | Gera código C++ para cálculos, com exemplos usando números inteiros (prova real). |
+| **Etimologia** | `etimologia.py` | Consulta a origem de palavras em latim, grego, sânscrito, hebraico, etc. Baseado em dicionários etimológicos e referências acadêmicas. |
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Linguagem:** Python 3.10+
+- **Framework Web:** [Streamlit](https://streamlit.io)
+- **Provedores de IA:**
+  - [Groq](https://groq.com)
+  - [Fireworks AI](https://fireworks.ai)
+  - [Together AI](https://together.ai)
+  - [Replicate](https://replicate.com)
+  - [Vercel AI Gateway](https://vercel.com/ai-gateway) (compatível com OpenAI)
+- **Bibliotecas principais:**
+  - `PyPDF2` – extração de texto de PDFs
+  - `requests` + `beautifulsoup4` – scraping de headings e metadados
+  - `openai` – cliente base para APIs compatíveis
+  - `groq`, `fireworks-ai`, `together`, `replicate` – SDKs oficiais
+  - `python-dotenv` – gerenciamento de variáveis de ambiente
+
+---
+
+## ✅ Pré-requisitos
+
+- **Python 3.10 ou superior** instalado.
+- **Git** (para clonar o repositório).
+- **Chaves de API** de pelo menos um dos provedores suportados (recomenda-se ter várias para fallback).
+
+---
+
+## 🔧 Instalação e Execução
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/Gussnogue/azitech-ai-search-assistant.git
+cd azitech-ai-search-assistant
