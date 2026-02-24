@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🧠 Azitech Open Source AI Search Assistant
 
 **Central de Soluções Digitais com IA Multi-Provedor**  
@@ -99,9 +98,111 @@ O sistema é composto por:
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/Gussnogue/azitech-ai-search-assistant.git
-cd azitech-ai-search-assistant
-=======
-# azitech_open_source_ai_search_assistant
-Sistema modular que integra **múltiplos provedores de IA** (Groq, Fireworks, Together, Replicate, Vercel AI Gateway) em uma única interface Streamlit. Oferece desde análise de texto local até geração de código em Python, Rust, C++, consultas SEO e etimologia.
->>>>>>> c8630860188c5a9e1ee996fba8253a74e6d96de4
+git clone https://github.com/Gussnogue/azitech_open_source_ai_search_assistant.git
+cd azitech_open_source_ai_search_assistant
+
+2. Crie e ative um ambiente virtual (recomendado)
+
+Windows:
+
+bash
+python -m venv venv
+venv\Scripts\activate
+
+Linux/macOS:
+
+bash
+python3 -m venv venv
+source venv/bin/activate
+
+3. Instale as dependências
+
+bash
+pip install -r requirements.txt
+
+4. Configure as chaves de API (opcional)
+
+Você pode criar um arquivo .env na raiz do projeto com suas chaves:
+
+env
+GROQ_API_KEY=sua_chave
+FIREWORKS_API_KEY=sua_chave
+TOGETHER_API_KEY=sua_chave
+REPLICATE_API_TOKEN=sua_chave
+VERCEL_AI_GATEWAY_KEY=sua_chave
+
+Ou inserir as chaves diretamente na interface do Streamlit após executar o app.
+
+5. Execute o aplicativo
+
+bash
+streamlit run app.py
+
+O aplicativo abrirá automaticamente no navegador em http://localhost:8501.
+
+🔑 Como Obter Chaves de API
+Provedor	URL para cadastro	Plano gratuito
+Groq	console.groq.com	✅ Sim (30 req/min)
+Fireworks AI	fireworks.ai	✅ Sim (créditos iniciais)
+Together AI	together.ai	✅ Sim (créditos iniciais)
+Replicate	replicate.com	✅ Sim (créditos iniciais)
+Vercel AI Gateway	vercel.com/ai-gateway	✅ Sim ($5/mês grátis)
+Recomenda-se cadastrar-se em todos para aproveitar as cotas gratuitas e garantir alta disponibilidade.
+
+📁 Estrutura de Pastas
+
+text
+azitech_open_source_ai_search_assistant/
+├── app.py                     # Interface Streamlit (frontend principal)
+├── requirements.txt           # Dependências do projeto
+├── README.md                  # Documentação
+├── .env.example               # Exemplo de arquivo de ambiente
+├── .gitignore                 # Arquivos ignorados pelo Git
+└── modules/
+    ├── __init__.py            # Torna a pasta um pacote Python
+    ├── analisador_core.py     # Módulo local (sem IA)
+    ├── search_assistant.py    # Assistente SEO
+    ├── code_assistant.py      # Assistente Python
+    ├── rust_calc_assistant.py # Assistente Rust
+    ├── cpp_calc_assistant.py  # Assistente C++
+    ├── etimologia.py          # Consulta etimológica
+    └── router.py              # Roteador inteligente multi-provedor
+
+🙏 Créditos e Agradecimentos
+Este projeto utiliza documentações e recursos oficiais das seguintes tecnologias e provedores:
+
+Tecnologia	Documentação Oficial	Ícone
+Python	docs.python.org/3	https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white
+Streamlit	docs.streamlit.io	https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white
+Groq	console.groq.com/docs	https://img.shields.io/badge/Groq-00A67E?style=flat&logo=groq&logoColor=white
+Fireworks AI	readme.fireworks.ai	https://img.shields.io/badge/Fireworks_AI-FF6F00?style=flat
+Together AI	docs.together.ai	https://img.shields.io/badge/Together_AI-5A2B77?style=flat
+Replicate	replicate.com/docs	https://img.shields.io/badge/Replicate-003D74?style=flat
+Vercel AI Gateway	vercel.com/docs/ai	https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white
+PyPDF2	pypdf2.readthedocs.io	https://img.shields.io/badge/PyPDF2-FFD43B?style=flat&logo=python&logoColor=blue
+Beautiful Soup	crummy.com/software/BeautifulSoup	https://img.shields.io/badge/Beautiful_Soup-4B8BBE?style=flat
+Agradecimentos especiais às comunidades open-source que tornaram este projeto possível.
+
+🤝 Contribuição
+
+Contribuições são bem-vindas! Se você deseja:
+
+Adicionar um novo provedor de IA.
+Criar um novo módulo especializado.
+Corrigir bugs ou melhorar a interface.
+
+Siga os passos:
+
+Faça um fork do projeto.
+Crie uma branch para sua feature (git checkout -b feature/nova-funcionalidade).
+Commit suas mudanças (git commit -m 'Adiciona nova funcionalidade').
+Push para a branch (git push origin feature/nova-funcionalidade).
+Abra um Pull Request.
+
+📄 Licença
+Este projeto está licenciado sob a MIT License.
+
+© 2026 AZITech – Central de Soluções Digitais.
+Desenvolvido por Gustavo Silva Nogueira.
+📍 Teófilo Otoni - MG • 📧 azitech.oficial@gmail.com
+🌐 azitech.com.br • 📱 @azi.tech.math (Instagram, LinkedIn, Twitter)
