@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🧠 Azitech Open Source AI Search Assistant
 
 **Central de Soluções Digitais com IA Multi-Provedor**  
@@ -100,3 +101,7 @@ O sistema é composto por:
 ```bash
 git clone https://github.com/Gussnogue/azitech-ai-search-assistant.git
 cd azitech-ai-search-assistant
+=======
+# azitech_open_source_ai_search_assistant
+Sistema modular que integra **múltiplos provedores de IA** (Groq, Fireworks, Together, Replicate, Vercel AI Gateway) em uma única interface Streamlit. Oferece desde análise de texto local até geração de código em Python, Rust, C++, consultas SEO e etimologia.
+>>>>>>> c8630860188c5a9e1ee996fba8253a74e6d96de4
