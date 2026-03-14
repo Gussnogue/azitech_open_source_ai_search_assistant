@@ -1,5 +1,17 @@
 # 🧠 Azitech Open Source AI Search Assistant
 
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.35%2B-red)](https://streamlit.io)
+[![Groq](https://img.shields.io/badge/Groq-API-orange)](https://groq.com)
+[![Fireworks AI](https://img.shields.io/badge/Fireworks%20AI-API-yellow)](https://fireworks.ai)
+[![Together AI](https://img.shields.io/badge/Together%20AI-API-green)](https://together.ai)
+[![Replicate](https://img.shields.io/badge/Replicate-API-lightgrey)](https://replicate.com)
+[![Vercel AI](https://img.shields.io/badge/Vercel%20AI%20Gateway-API-black)](https://vercel.com/ai-gateway)
+[![PyPDF2](https://img.shields.io/badge/PyPDF2-PDF%20Extraction-orange)](https://pypi.org/project/PyPDF2/)
+[![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-Scraping-green)](https://www.crummy.com/software/BeautifulSoup/)
+[![OpenAI Compatible](https://img.shields.io/badge/OpenAI-Compatible-blueviolet)](https://openai.com)
+[![Modular](https://img.shields.io/badge/Modular-Architecture-purple)](https://github.com/Gussnogue/azitech_open_source_ai_search_assistant)
+
 **Central de Soluções Digitais com IA Multi-Provedor**  
 
 Sistema modular que integra **múltiplos provedores de IA** (Groq, Fireworks, Together, Replicate, Vercel AI Gateway) em uma única interface Streamlit. Oferece desde análise de texto local até geração de código em Python, Rust, C++, consultas SEO e etimologia.
