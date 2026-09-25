@@ -1,4 +1,4 @@
-# 🧠 Azitech Open Source AI Search Assistant
+# 🧠 Azitech AI Search Assistant
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.35%2B-red)](https://streamlit.io)
@@ -181,5 +181,5 @@ azitech_open_source_ai_search_assistant/
     └── router.py              # Roteador inteligente multi-provedor
 ```
 
-### Contato: azitech.oficial@gmail.com | @azi.tech.math 
+### Contato: aziprojects@outlook.com | @azi.tech
 Gustavo Silva Nogueira
